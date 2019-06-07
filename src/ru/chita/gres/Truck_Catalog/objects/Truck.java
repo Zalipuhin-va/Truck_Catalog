@@ -8,12 +8,13 @@ public class Truck {
     String name_truck;
     long vin;
 
-    public String getName_truck() {
-        return name_truck;
-    }
+    public void GetTruck(){
+        System.out.println("Введите Name: ");
+        name_truck = in.next();
+        System.out.println("Vin: ");
+        vin = in.nextLong();
 
-    public long getVin() {
-        return vin;
+        System.out.println("Name = " + name_truck);
+        System.out.println("VIN = " + vin);
     }
-
 }
